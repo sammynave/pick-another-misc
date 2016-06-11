@@ -34,30 +34,37 @@ var users = [
 
 function assignKnownSong(song) {
   if (song['sms'] === 'y') {
+    console.log('sjman')
     users[0].knownSongs.push({song: song.id, instrument: 1});
   }
 
   if (song['scel'] === 'y') {
+    console.log('scel')
     users[0].knownSongs.push({song: song.id, instrument: 2});
   }
 
   if (song['bfid'] === 'y') {
+    console.log('bfid')
     users[1].knownSongs.push({song: song.id, instrument: 3});
   }
 
   if (song['jbj'] === 'y') {
+    console.log('jbj')
     users[2].knownSongs.push({song: song.id, instrument: 6});
   }
 
   if (song['jguit'] === 'y') {
+    console.log('jguit')
     users[2].knownSongs.push({song: song.id, instrument: 4});
   }
 
   if (song['jmand'] === 'y') {
+    console.log('jmand')
     users[2].knownSongs.push({song: song.id, instrument: 1});
   }
 
   if (song['dbs'] === 'y') {
+    console.log('dbs')
     users[3].knownSongs.push({song: song.id, instrument: 5});
   }
 }
